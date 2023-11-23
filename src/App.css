@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(./assets/font/FuturaLT.woff);
+}
+
+@font-face {
+  font-family: 'FuturaBook';
+  src: url(./assets/font/FuturaLT-Book.woff);
+}
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  font-family: 'Futura', 'Roboto';
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #EFE8D2;
+}
+
+.appWrapper{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
