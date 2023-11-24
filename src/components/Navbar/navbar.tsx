@@ -1,5 +1,5 @@
 import {useRef, useState, useEffect} from "react"
-import s from "./navbar.module.css"
+import s from "./navbar.module.scss"
 import {ReactComponent as Logo} from '../../assets/headerLogo.svg'
 import {ReactComponent as SearchIcon} from "../../assets/searchIcon.svg"
 import {ReactComponent as ShoppingBagIcon} from "../../assets/shoppingBagIcon.svg"

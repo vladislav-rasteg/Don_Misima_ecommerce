@@ -1,0 +1,89 @@
+@import "../../vars";
+
+.navbarWrapper{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    transition: 300ms;
+}
+
+.none {
+    background: transparent;
+}
+
+.light {
+    background: $bgcolor;
+    border-bottom: 1px solid $borderColor;
+}
+
+.navbar{
+    display: flex;
+    width: $width1440;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.navbarHide{
+    top: -110px;
+}
+
+.navbarLinks{
+    display: flex;
+    gap: 32px;
+}
+
+.navbarLinks a{
+    color: $textLightColor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.light a{
+    color: $textDarkColor;
+}
+
+.navbarLinks a:hover{
+    transform: scale(1.05);
+}
+
+.navButtons{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 26px;
+    background: $textLightColor;
+    transition: 300ms;
+}
+
+.light .navButtons{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding: 0;
+    border-radius: 26px;
+    background: transparent;
+}
+
+.navButtons a{
+    transition: 300ms;
+}
+
+.navButtons a:hover{
+    transform: scale(1.05);
+}
+
+.navbarButton{
+    width: 32px;
+    height: 32px;
+}

@@ -1,0 +1,36 @@
+.firstBlock{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    position: relative;
+    z-index: 10;
+}
+
+.otherBlocks{
+    display: flex;
+    flex-direction: column;
+    width: 1340px;
+}
+
+.dark{
+    background: rgba(36, 29, 27, 0.05);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage{
+    width: auto;
+    min-width: 100vw;
+    height: 120vh;
+    position: absolute;
+    top: 0px;
+    z-index: 6;
+}

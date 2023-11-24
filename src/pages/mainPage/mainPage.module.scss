@@ -1,0 +1,102 @@
+@import "../../vars";
+
+.pageWrapper{
+    width: 100vw;
+    padding-top: 0px;
+    height: 300vh;
+}
+
+a{
+    cursor: pointer;
+}
+
+section{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.ourBlends{
+    width: $width1440;
+    display: flex;
+    align-items: end;
+    gap: 22px;
+    max-height: $cardHeight1440;
+}
+
+.blendCard{
+    position: relative;
+    width: 100%;
+    height: $cardHeight1440;
+    border-radius: $defaultBorderRadius;
+    background: $darkbg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.blendCardPattern{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/BackgroundPattern.svg");
+    background-position: calc(100vw / 2 - 54px) 0px;
+    z-index: 2;
+    opacity: 0.25;
+}
+
+.blendCard:hover{
+    margin-bottom: 12px;
+}
+
+.blendCardLogo{
+    width: 320px;
+    height: auto;
+    z-index: 3;
+}
+
+.fullWidthButton{
+    width: $width1440;
+    padding: 22px 0px;
+    border-radius: 32px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $mainContrastColor;
+}
+
+.fullWidthButton:hover{
+    background: $primaryButtonHover;
+}
+
+.certificatesBlock{
+    margin: 120px 0px;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+}
+
+.content{
+    width: $width1440;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.content h2{
+    font-family: 'FuturaBook';
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}

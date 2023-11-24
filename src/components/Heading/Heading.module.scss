@@ -1,0 +1,27 @@
+@import "../../vars";
+
+.heading{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+.divider1{
+    width: 100vw;
+    background: url(../../assets/divider_pattern.svg) right;
+    height: 72px;
+}
+.divider2{
+    width: 100vw;
+    background: url(../../assets/divider_pattern.svg) left;
+    height: 72px;
+}
+
+.heading h1{
+    padding: 12px 26px;
+    border: solid 4px $mainContrastColor;
+    color: $textDarkColor;
+    border-radius: $defaultBorderRadius;
+    font-size: 46px;
+    min-width: fit-content;
+    font-weight: 400;
+}

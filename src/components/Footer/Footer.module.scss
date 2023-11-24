@@ -1,0 +1,99 @@
+@import "../../vars";
+
+@import "../../vars";
+
+.footer{
+    position: relative;
+    margin-top: 120px;
+    background: $darkbg;
+    display: flex;
+    justify-content: center;
+}
+
+.footerPattern{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/BackgroundPattern.svg");
+    background-position: calc(100vw / 2 - 54px) 0px;
+    z-index: 2;
+    opacity: 0.25;
+}
+
+.footerContent{
+    width: $width1440;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+    z-index: 3;
+    height: 500px;
+}
+
+.columnSpaceBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+.socialMedia{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $defaultBorderRadius;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 56px;
+    height: 56px;
+    transition: 300ms;
+}
+
+.socialMedia:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.smallText{
+    color: $textLightColor;
+    opacity: 0.4;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: $textLightColor;
+    font-size: 36px;
+}
+
+.smallTextLink{
+    color: $textLightColor;
+    opacity: 0.4;
+    transition: 300ms;
+    text-decoration: underline;
+}
+
+.smallTextLink:hover{
+    opacity: 1;
+}
+
+.columnGap{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.smallLightText{
+    color: $textLightColor;
+}
+
+.columnNoGap{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
