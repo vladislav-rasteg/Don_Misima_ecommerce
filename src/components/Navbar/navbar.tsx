@@ -46,7 +46,6 @@ const Navbar = () => {
             // if scroll down hide the navbar
             setShowNavbar(false);
             } else {
-            console.log(window.scrollY, window.innerWidth)
             if(window.scrollY > 900 && window.innerWidth > 1400) {
                 setTheme('light')
             } else {
